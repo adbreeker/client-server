@@ -1,0 +1,16 @@
+﻿<Window x:Class="Klient.Printer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Klient"
+        mc:Ignorable="d"
+        Title="Printer" Height="450" Width="400">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" x:Name="sv" ScrollChanged="sv_ScrollChanged">
+        <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Padding="20" >  
+            <InlineUIContainer>  
+            <TextBlock x:Name="PrinterText" FontSize="28" FontWeight="Bold"><Run Text="To może chwilę potrwać..."/></TextBlock>  
+            </InlineUIContainer>   
+        </TextBlock>
+    </ScrollViewer>
+</Window>
